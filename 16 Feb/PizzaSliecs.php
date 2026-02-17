@@ -1,0 +1,6 @@
+<?php
+    $pizza;
+    $friends;
+
+    
+?>
