@@ -10,15 +10,15 @@
         $marks = $_POST["marks"];
         $daysLate = $_POST["daysLate"];
     }    
-    $applyCap = function() {
-        return 0;
+    $applyCap = function($penalty, $maxPenalty) {
+        return min($penalty, $maxPenalty);
     };
 
-    $currentPenalty = 2 * $daysLate;
-    $marks -= (2 * $daysLate);
+    $currentPenalty = $applyCap(2 * $daysLate, $maxPenalty);
+    $marks -= $currentPenalty;
 
     if ($marks < 0) {
-        $marks = $applyCap();
+        $marks = 0;
     }
 ?>
 
@@ -34,7 +34,7 @@
         Student Name: <input type="text" name="name" required>
         Asssignment Marks: <input type="number" name="marks" required>
         Days Late: <input type="number" name="daysLate" required>
-<br/>
+        <br/>
         Total Penalty: <?php echo $currentPenalty ?> <br/>
         Total Marks after penalty: <?php echo $marks ?> <br/>
         <input type="submit" value="Submit">
