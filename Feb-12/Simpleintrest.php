@@ -1,7 +1,7 @@
 <?php
     $SimpleIntrest;
     $PrincipalAmount = $_POST['PrincipalAmount'];
-    $ROI = ;
+    $ROI;
     $Time;
 
     $SimpleIntrest = ($PrincipalAmount * $ROI * $Time) / 100
