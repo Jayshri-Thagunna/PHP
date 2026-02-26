@@ -18,7 +18,6 @@
         $str_main = ucfirst($name);
         
         echo "<br><br>Hello, $str_main in PHP";
-
     }
     ?>
 </form>
