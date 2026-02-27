@@ -6,6 +6,7 @@ class car {
     // Methods
     function s($colour) {
         $this -> colour = $colour;
+        
     }
 
     function display() {
