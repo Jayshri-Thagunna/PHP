@@ -10,7 +10,7 @@
     crossorigin="anonymous">
 </head>
 <body>
-     <form method="POST">
+    <form method="POST">
     Many field types:
     <br>
     Account: <input type="text" name="account" >
