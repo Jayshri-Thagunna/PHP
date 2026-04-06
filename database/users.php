@@ -9,7 +9,9 @@ if(!$conn){
     echo "Conecction Sucessful";
 }
 
-$query = "insert into users(name,age) values(\"Jais\", 22)";
-mysqli_query($conn, $query);
+// $query = "insert into users(name,age) values(\"Jais\", 22)";
+// mysqli_query($conn, $query);
+$query2 = "insert into users(name,age) values(\"PoguLal\", 24)";
+mysqli_query($conn, $query2);
 
 ?>
