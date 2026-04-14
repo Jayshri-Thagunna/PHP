@@ -13,6 +13,7 @@ if(!$conn){
     echo "Conecction Sucessful";
 }
 
+
 //to create database
 
 $name = "Aman";
